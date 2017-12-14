@@ -1,0 +1,838 @@
+@import url('https://fonts.googleapis.com/css?family=Inconsolata|Noto+Sans');
+
+@import url('https://fonts.googleapis.com/css?family=Inconsolata|Noto+Sans|Miriam+Libre');
+
+@font-face {
+    font-family: IBM Plex Mono;
+    src: local(fonts/IBM Plex Mono);
+}
+
+
+.hidden{
+    display: none!important;
+}
+
+.h1 {
+	font-size: 18px;
+}
+
+.grid {
+	display: grid;
+	position: absolute;
+	top:0;
+	left: 0;
+	grid-template-columns: repeat(4, 25%);
+	grid-template-rows: repeat(2, 50%);
+	width: 100vw;
+	height: 100vh;
+}
+
+.grid > div {
+    border: 10px solid black;
+}
+
+#logomain {
+    width: 80%;
+    position: relative;
+    padding-left: 20px;
+    padding-top: 50px;
+    
+}
+.code {
+	font-family: IBM Plex Mono, 'Miriam Libre';
+	font-style: normal;
+	font-weight: 200;
+	font-size:2vw;
+    color: black;
+    background-color: white;
+}
+
+.blue {
+	color: black;
+	font-family: 'IBM Plex Mono', 'Miriam Libre';
+    font-style: italic;
+    font-size:1em;
+    font-weight: 500;
+    background-color: white;
+
+}
+
+.link {
+    padding: 10px;
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    right: 5%;
+    top: 3%;
+ 	grid-column: 4/6;
+    background-color: black;
+    transition: .5s;
+    z-index: 20;
+
+}
+
+.link:hover {
+    padding: 13px;
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    right: 4.5%;
+    top: 2.5%;
+ 	grid-column: 4/6;
+    background-color: black;
+    transition: .5s;
+}
+
+.imagefill {
+    width: 100%;
+    height: inherit;
+    overflow: hidden;
+    grid-column: 1/4;
+    grid-row: 1/4;
+*/}
+
+.imagefill2 {
+    position: absolute;
+    right: 0;
+    width: 75%;
+    height: 100%;
+    overflow: hidden;
+
+*/}
+
+img {
+	max-width: 150%;
+	min-height: 100%;
+	object-fit: contain;
+/*	z-index: -1;
+*//*	transform: rotate(90deg);
+*/}
+
+
+#MaxReg {
+	transform: rotate(90deg);
+	max-width: 300%;
+	margin-top: -50px;
+}
+
+#MaxReg:hover {
+display: none;
+}
+
+.moretext {
+	display:none;
+	font-family: "Inconsolata";
+	font-weight: bold;
+	font-size: .7em;
+	padding-left: 20px;
+	padding-top: 20px;
+}
+
+#box1 {
+ 	grid-row: 1/2;
+ 	grid-column: 1/2;
+ 	overflow: hidden;
+ 	background-color: black;
+ 	background-image: none;
+ 	color: white;
+ 	padding: 20px;
+    margin-top: -40px;
+    padding-right: 30%;
+ }
+ .title {
+	font-family: IBM Plex Mono, 'Miriam Libre', monospace;
+	font-weight: 400;
+	font-size: 10em;
+    margin-left: -20px;
+
+}
+
+.subtitle {
+	font-family: IBM Plex Mono, 'Inconsolata';
+	font-weight: lighter;
+	font-size: .9vw;
+	margin-top: auto;
+
+
+}
+
+.boxbig {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+	grid-template-rows: repeat(2, 50%);
+    width: 60%;
+    height: 60%;
+    border: 30px solid black;
+    position: absolute;
+    top: 15%;
+    left: 20%;
+    z-index: 10;
+    background-color: white; 
+    opacity: 0;
+    z-index: -999;
+    -webkit-transition: all .5s;
+    background-color:white; 
+        box-shadow:
+    -120px 0px 0px -30px white,
+    -120px 0px 0px 0px black,
+    120px 0px 0px -30px white,
+    120px 0px 0px 0px black,
+    0px -80px 0px -30px white,
+    0px -80px 0px 0px black,
+    0px 80px 0px -30px white,
+    0px 80px 0px 0px black,
+    -60px 40px 200px 75px rgba(00, 0, 00, 0.5); 
+}
+
+.insidetext {
+    font-family: IBM Plex Mono;
+    position: absolute;
+    margin-top: 50px;
+    margin-left: 20px;
+}
+
+.insidetext2 {
+    font-family: 'IBM Plex Mono';
+    position: absolute;
+    top: 20%;
+    bottom: auto;
+    left: 0px;
+    font-size: 1em;
+    background-color: black;
+    color: white
+}
+
+.insidetext3 {
+    font-family: 'IBM Plex Mono';
+    position: absolute;
+    font-style: italic;
+    top: 0%;
+    width: 40%;
+    bottom: auto;
+    left: 0px;
+    font-size: 4em;
+    background-color: black;
+    color: white
+}
+
+.insidetext4 {
+    font-family: 'IBM Plex Mono';
+    position: absolute;
+    font-style: italic;
+    top: 0%;
+    width: 40%;
+    bottom: auto;
+    left: 0px;
+    font-size: 7em;
+    background-color: transparent;
+    color: black;
+    text-shadow: 10px white;
+}
+
+.insidetext5 {
+    font-family: 'IBM Plex Mono';
+    position: absolute;
+    font-style: italic;
+    top: 5%;
+    width: 40%;
+    bottom: auto;
+    left: 2%;
+    font-size: 6vw;
+    background-color: black;
+    color: white;
+}
+
+.insidetext6 {
+    font-family: 'IBM Plex Mono';
+    position: absolute;
+    font-style: italic;
+    top: 5%;
+    width: 40%;
+    bottom: auto;
+    left: 2%;
+    font-size: 5vw;
+    background-color: black;
+    color: white;
+}
+
+.insettitle {
+    font-family: 'IBM Plex Mono';
+    position: absolute;
+    font-style: italic;
+    top: 20px;
+    width: 40%;
+    left: 40px;
+    font-size: 5vw;
+    background-color: black;
+    color: white
+}
+
+.insettitle2 {
+    font-family: 'IBM Plex Mono';
+    position: absolute;
+    font-style: italic;
+    top: 20px;
+    width: 40%;
+    left: 3%;
+    font-size: 3.52vw;
+    background-color: black;
+    color: white
+}
+
+
+.insetparagraph {
+    font-family: 'IBM Plex Mono';
+    font-style: regular;
+    font-weight: 100;
+    font-size: 1.5vw;
+    background-color: white;
+    border: 5px solid black;
+    color: black;
+    position: absolute;
+    left: 10%;
+    width: 50%;
+    top: 50%;
+    z-index: 10;
+}
+
+.insetparagraph2 {
+    font-family: 'IBM Plex Mono';
+    font-style: regular;
+    font-weight: 100;
+    font-size: 1.2vw;
+    background-color: white;
+    border: 5px solid black;
+    color: black;
+    position: absolute;
+    left: 5%;
+    width: 50%;
+    top: 50%;
+    z-index: 10;
+}
+
+.insetparagraph3 {
+    font-family: 'IBM Plex Mono';
+    font-style: regular;
+    font-weight: 100;
+    font-size: 1.2vw;
+    background-color: white;
+    border: 5px solid black;
+    color: black;
+    position: absolute;
+    left: 5%;
+    width: 50%;
+    top: 65%;
+    z-index: 10;
+}
+
+.bottomlefttext {
+    font-family: 'IBM Plex Mono';
+    position: absolute;
+    font-style: normal;
+    font-weight: 300;
+    bottom: 10%;
+    left: 50%;
+    font-size: 1vw;
+    background-color: black;
+    color: white;
+    width: 40%;
+    grid-column: 1/3;
+    grid-row: 2/3;
+    display: non
+
+}
+
+.italic {
+    font-style: italic;
+}
+
+.inset {
+    overflow: hidden;
+    height: 100%;
+    width: 100%;
+    float: right;
+    object-fit: cover;
+
+}
+.printed {
+    width: 40%;
+    height: 50%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    background: transparent;    
+    transition: .5s;
+    object-fit: cover;
+    border: 10px solid black;
+    }
+
+.printed:hover {
+    width: 80%;
+    height: 90%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: red;
+    background: transparent;
+    z-index: 20;
+    transition: .5s;
+    }
+
+.printed:hover > .onphoto {
+    background-color: white;
+    color: black;
+    transition: 1s;
+    display: block;
+    font-size: 2vw;
+    }
+
+.browser {
+    width: 40%;
+    height: 50%;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    transition: .5s;
+    object-fit: cover;
+        border: 10px solid black;
+
+    }
+
+.browser:hover {
+    width: 80%;
+    height: 90%;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    background: transparent;
+    z-index: 20;
+    transition: .5s;
+    }
+
+.browser:hover > .onphoto {
+    background-color: black;
+    transition: .5s;
+    font-size: 2vw;
+    }
+
+
+
+
+
+
+.printed2 {
+    width: 40%;
+    height: 50%;
+    position: absolute;
+    top: 0;
+    right: 10%;
+    background: transparent;    
+    transition: .5s;
+    object-fit: cover;
+    border: 10px solid black;
+    z-index: 5;
+
+    }
+
+.printed2:hover {
+    width: 100%;
+    height: 125%;
+    position: absolute;
+    top: -80px;
+    right: 0px;
+    background-color: red;
+    background: transparent;
+    z-index: 11;
+    transition: .5s;
+    border: 20px solid black;
+
+    }
+
+.printed2:hover > .onphoto {
+    background-color: white;
+    color: black;
+    transition: 1s;
+    display: block;
+    font-size: 2vw;
+    }
+
+.browser2 {
+    width: 40%;
+    height: 50%;
+    position: absolute;
+    bottom: 0;
+    right: 3%;
+    background: transparent;    
+    transition: .5s;
+    object-fit: cover;
+            border: 10px solid black;
+
+    }
+
+.browser2:hover {
+    width: 125%;
+    height: 100%;
+    position: absolute;
+    bottom: 0;
+    right: -120px;
+    background: transparent;
+    z-index: 11;
+    transition: .5s;
+    border: 20px solid black;
+    }
+
+.browser2:hover > .onphoto {
+    background-color: black;
+    transition: .5s;
+    font-size: 2vw;
+    }
+
+
+
+
+
+
+
+
+
+.onphoto {
+    position: absolute;
+    font-family: 'IBM Plex Mono';
+    font-weight: 200;
+    position: absolute;
+    font-size: 1vw;
+    color: white;
+    
+}
+
+
+#box2 {
+ 	grid-row: 1/2;
+ 	grid-column: 2/3;
+ 	overflow: hidden;
+ 	background-color: white;
+ 	background-image: none;
+ 	padding: 20px;
+
+ }
+
+ #box2:hover {
+ 	grid-row: 1/2;
+ 	grid-column: 2/3;
+ 	overflow: hidden;
+ 	color: white;
+ 	background-image: url(imgs/Max_DeVore_3.JPG);
+ 	background-size: 180%;
+ 	background-repeat: repeat;
+ }
+
+  #box2:hover > .code {
+ 	color: white;
+ }
+
+  #box2:hover > #box1blue {
+	color: red;
+    font-size: 3em;
+ }
+
+.box2enlarge {
+    display: none;
+    color: black;
+    bottom: 51%;
+    right: 51%;
+}
+
+  #box2:hover > .box2enlarge {
+ 	display: block;
+    color: black;
+
+ }
+
+
+
+.box2big {
+    display: block;
+    background-size: cover;
+}
+
+.box2link {
+    display: block;
+}
+
+.visible{
+    opacity: 1!important;
+    z-index: 10!important;
+}
+
+.image {
+    width: 50%
+}
+
+
+
+.enlarge {
+	font-family: 'IBM Plex Mono', monospace;
+    font-weight: 500;
+    font-size: 1em;
+    float: right;
+    position: absolute;
+    color: black;
+    background-color: white;
+}
+
+.enlarge:hover {
+    text-decoration: underline;
+}
+
+#box3 {
+ 	grid-row: 1/2;
+ 	grid-column: 3/4;
+ 	background-color: none;
+     	padding: 20px;
+
+}
+
+#box3:hover {
+ 	grid-row: 1/2;
+ 	grid-column: 3/4;
+ 	background-color: white;
+ 	overflow: hidden;
+ 	background-size: 150%;
+ 	background-repeat: repeat;
+ 	background-image: url(assets/Kennis/kennischowposter.jpg);
+}
+
+
+#box3:hover > .box3enlarge {
+ 	display: block;
+
+}
+
+#box3:hover > .code {
+ 	color: white;
+
+}
+
+.box3enlarge {
+    display: none;
+    bottom: 51%;
+    right: 26%;
+}
+
+
+.box3big {
+    display: grid;
+    width: 60%;
+    height: 60%;
+    border: 30px solid black;
+    position: absolute;
+    top: 15%;
+    left: 20%;
+    z-index: 10;
+    background-color: white; 
+    opacity: 0;
+    z-index: -999;
+    -webkit-transition: all .5s;
+    background-color:white; 
+    object-fit: contain;
+}
+
+
+.box4big {
+    display: block;
+    -webkit-transition: all .5s;
+    background-size: cover;
+}
+
+
+#box4 {
+ 	grid-row: 1/2;
+ 	grid-column: 4/5;
+ 	background-color: white;
+ 	overflow: hidden;
+ 	background-size: 150%;
+         	padding: 20px;
+
+
+}
+
+#box4:hover {
+ 	grid-row: 1/2;
+ 	grid-column: 4/5;
+ 	background-color: white;
+ 	overflow: hidden;
+ 	background-size: 150%;
+ 	background-repeat: repeat;
+ 	background-image: url(assets/Yangyifan_Dong_3.jpg);
+}
+
+.box4enlarge {
+    display: none;
+    right: 1%;
+    bottom: 51%;
+}
+
+#box4:hover > .box4enlarge {
+ 	display: block;
+}
+
+#box4:hover > .code {
+ 	color: white;
+
+}
+
+
+
+#box5 {
+ 	grid-row: 2/3;
+ 	grid-column: 1/2;
+ 	background-color: white;
+ 	overflow: hidden;
+ 	 	background-size: 150%;
+    padding: 20px;
+
+}
+
+#box5:hover {
+ 	grid-row: 2/3;
+ 	grid-column: 1/2;
+ 	background-color: white;
+ 	overflow: hidden;
+ 	background-size: 150%;
+ 	background-repeat: repeat;
+ 	background-image: url(assets/Mo_Zhou_P3.JPG);
+}
+
+#box5:hover > .code {
+ 	color: white;
+
+}
+
+#box5:hover > .box5enlarge {
+ 	display: block;
+}
+
+.box5enlarge {
+    display: none;
+    bottom: 1%;
+    right: 76%;
+}
+
+
+.box5big {
+    display: block;
+    background-size: cover;
+
+}
+
+#box6 {
+ 	grid-row: 2/3;
+ 	grid-column: 2/3;
+ 	background-color: white;
+ 	overflow: hidden;
+    padding: 20px;
+}
+
+#box6:hover {
+ 	grid-row: 2/3;
+ 	grid-column: 2/3;
+ 	background-color: white;
+ 	overflow: hidden;
+    padding: 20px;
+    background-image: url(assets/Chi/Qi-Numbers-Screencatch.gif)
+}
+
+#box6:hover > .code {
+    color: white;
+}
+
+.box6enlarge {
+    display: none;
+        bottom: 1%;
+    right: 51%;
+}
+
+#box6:hover > .box6enlarge {
+display: block;
+}
+
+.box6big {
+    display: block;
+    background-image: none;
+    background-size: cover;
+
+}
+
+#box7 {
+ 	grid-row: 2/3;
+ 	grid-column: 3/4;
+ 	background-color: white;
+    padding: 20px;
+}
+
+#box7:hover {
+ 	grid-row: 2/3;
+ 	grid-column: 3/4;
+ 	overflow: hidden;
+    background-size: 150%;
+ 	background-repeat: repeat;
+ 	background-image: url(assets/Geo/IMG_0501.JPG);
+}
+
+#box7:hover > .code {
+    color: white;
+}
+
+.box7enlarge {
+    display: none;
+        bottom: 1%;
+    right: 26%;
+}
+
+#box7:hover > .box7enlarge {
+display: block;
+}
+
+.box7big {
+    display: block;
+    background-image: none;
+    background-size: cover;
+
+}
+
+#box8 {
+ 	grid-row: 2/3;
+ 	grid-column: 4/5;
+ 	background-color: white;
+    padding: 20px;
+}
+
+#box8:hover {
+ 	grid-row: 2/3;
+ 	grid-column: 4/5;
+ 	 	background-size: 150%;
+ 	background-repeat: repeat;
+ 	background-image: url(imgs/winstonimg.png);
+}
+
+#box8:hover > .code {
+    color: white;
+}
+
+.box8enlarge {
+    display: none;
+        bottom: 1%;
+    right: 2%;
+}
+
+#box8:hover > .box8enlarge {
+display: block;
+}
+
+.box8big {
+    display: block;
+    background-image: none;
+    background-size: cover;
+
+}
+
